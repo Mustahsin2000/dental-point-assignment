@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 const Toolscard = ({tool}) => {
     const {_id,price,title,description,img} = tool;
     return (
         <div className="card w-75 bg-base-100 shadow-xl">
-  <figure><img src={img} alt="Shoes" /></figure>
+  <PhotoProvider>
+    <PhotoView src={img}>
+    <figure><img src={img} alt="Shoes" /></figure>
+    </PhotoView>
+  </PhotoProvider>
   <div className="card-body">
     <h2 className="card-title">{title}</h2>
     <h2 className="card-title">{price}</h2>
