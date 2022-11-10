@@ -4,7 +4,10 @@ import logo from '../../../assets/b373087eba3a65525faed865e72707ed.jpg'
 import { AuthContext } from '../../../Context/Authprovider/Authprovider';
 
 const Header = () => {
-  const {user} = useContext(AuthContext);
+  const {user,logout} = useContext(AuthContext);
+  const handlelogout = () =>{
+    logout();
+  }
     const menu = <>
     <li className='font-semibold'><Link to='/'>Home</Link></li>
     {
@@ -12,6 +15,10 @@ const Header = () => {
       <>
       <li className='font-semibold'><Link to='/review'>Review</Link></li>
       <li className='font-semibold'><Link to='/addservice'>Add Service</Link></li>
+      <li className='font-semibold'><Link to='/review'>Reviews</Link></li>
+      <li className='font-semibold'>
+        <button onClick={handlelogout} className='btn-primary text-white'>Sign Out</button>
+        </li>
       </>
       :
       <li className='font-semibold'><Link to='/login'>Login</Link></li>

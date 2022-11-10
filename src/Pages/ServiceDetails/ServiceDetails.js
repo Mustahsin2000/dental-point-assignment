@@ -88,7 +88,7 @@ const ServiceDetails = () => {
             <input name='email' defaultValue={user?.email} type="text"  placeholder="Email" className="input input-bordered input-info w-full max-w-xs" readOnly/>
          </div>
          <textarea name='message' className="textarea textarea-primary w-full mt-11 h-32" placeholder="please review my treatment" required></textarea>
-         <input  className='btn btn-primary mt-3' type="submit" value="Review" />
+         <Link to='/review'><input  className='btn btn-primary mt-3' type="submit" value="Review" /></Link>
           </form>
 
             </div>
