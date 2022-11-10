@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const ServiceDetails = () => {
     const {_id,title,img,description,price} = useLoaderData();
     const {user} = useContext(AuthContext);
+    console.log(user)
 
     const handlerevieworder = event =>{
         event.preventDefault();
