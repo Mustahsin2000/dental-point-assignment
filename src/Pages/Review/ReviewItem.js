@@ -58,7 +58,7 @@ const ReviewItem = ({review,handleclose,handlereviewUpdate}) => {
 
 
 
-          <button onClick={()=>handlereviewUpdate(_id)} className="btn btn-ghost btn-xs">{status ? status : 'panding'}</button>
+          {/* <button onClick={()=>handlereviewUpdate(_id)} className="btn btn-ghost btn-xs">{status ? status : 'panding'}</button> */}
         </th>
       </tr>
      

@@ -58,15 +58,13 @@ const Review = () => {
 
     return (
         <div>
-            <h2 className='text-bold text-blue-600 text-3xl'>Reviews</h2>
+            <h2 className='text-bold text-blue-600 text-3xl mb-3 '>Reviews</h2>
             <div className="overflow-x-auto w-full">
   <table className="table w-full">
-    <thead>
-      <tr>
+    <thead >
+      <tr className='bg-green-600'>
         <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
+         
         </th>
         <th>Service</th>
         <th>Patient</th>
