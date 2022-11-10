@@ -4,7 +4,7 @@ const Equipment = () => {
     return (
         <div className="hero ">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={img} className="max-w-xs rounded-lg shadow-2xl w-3/4" />
+    <img src={img} alt="" className="max-w-xs rounded-lg shadow-2xl w-3/4" />
     <div>
       <h1 className='text-2xl text-blue-600 font-bold'>BEST OF THE BEST</h1>
       <h1 className="text-5xl font-bold">High End Equipments</h1>
