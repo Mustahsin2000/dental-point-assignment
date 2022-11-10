@@ -22,12 +22,12 @@ const Banner = () => {
       
     </div>
     <div className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-20 right-5 top-3/4">
-    <button className="btn btn-active btn-accent mr-10 text-white">Appoinment</button>
+    <button className="btn btn-active btn-accent  mr-10 text-white">Appoinment</button>
     <button className="btn btn-outline btn-accent text-white ">Discussion</button>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide4" className="btn btn-outline  btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-outline btn-circle">❯</a>
+      <a href="#slide2" className="btn btn-outline  btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
@@ -48,8 +48,8 @@ const Banner = () => {
     <button className="btn btn-outline btn-accent text-white ">Discussion</button>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-outline  btn-circle">❮</a> 
-      <a href="#slide3" className="btn btn-outline btn-circle">❯</a>
+      <a href="#slide1" className="btn btn-outline btn-square btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-outline btn-square btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide3" className="carousel-item relative w-full">
@@ -70,8 +70,8 @@ const Banner = () => {
     <button className="btn btn-outline btn-accent text-white ">Discussion</button>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-outline  btn-circle">❮</a> 
-      <a href="#slide4" className="btn btn-outline btn-circle">❯</a>
+      <a href="#slide2" className="btn btn-outline btn-square  btn-circle">❮</a> 
+      <a href="#slide4" className="btn btn-outline btn-square btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide4" className="carousel-item relative w-full">
@@ -92,8 +92,8 @@ const Banner = () => {
     <button className="btn btn-outline btn-accent text-white ">Discussion</button>
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-outline  btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-outline btn-circle">❯</a>
+      <a href="#slide4" className="btn btn-outline btn-square btn-circle">❮</a> 
+      <a href="#slide1" className="btn btn-outline btn-square btn-circle">❯</a>
     </div>
   </div> 
 </div>
