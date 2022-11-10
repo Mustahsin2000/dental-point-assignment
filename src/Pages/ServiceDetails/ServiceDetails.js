@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const ServiceDetails = () => {
     const {_id,title,img,description,price} = useLoaderData();
     const {user} = useContext(AuthContext);
-    console.log(user)
+    
 
     const handlerevieworder = event =>{
         event.preventDefault();
@@ -53,12 +53,12 @@ const ServiceDetails = () => {
 
     }
 
-    const addservice = () =>{
-        const proceed = window.confirm('added successfully');
-        if(proceed){
-            toast("Added Successfully!")
-        }
-    }
+    // const addservice = () =>{
+    //     const proceed = window.confirm('added successfully');
+    //     if(proceed){
+    //         toast("Added Successfully!")
+    //     }
+    // }
     return (
         //details
         <div>
@@ -72,7 +72,7 @@ const ServiceDetails = () => {
     <h2 className="card-title text-2xl">Price: ${price}</h2>
     <p>{description}</p>
     <div className="card-actions justify-end">
-      <Link to='/addservice'><button onClick={addservice} className="btn btn-primary">Add Service</button></Link>
+      <Link to='/addservice'><button className="btn btn-primary">Add Service</button></Link>
     </div>
   </div>
 </div>

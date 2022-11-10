@@ -1,29 +1,17 @@
 import { useEffect, useState } from "react";
-import { toast } from "react-toastify";
 
-const ReviewItem = ({review}) => {
+const ReviewItem = ({review,handleclose,handlereviewUpdate}) => {
 
-    const {_id,serviceName,message,price,email,patient,service} = review;
+    const {_id,serviceName,message,price,email,patient,service,status} = review;
     const [reviewItem,setReviewItem] = useState({});
-
+//    console.log(handlereviewUpdate)
     useEffect(()=>{
         fetch(`http://localhost:5000/services/${service}`)
         .then(res=>res.json())
         .then(data=>setReviewItem(data))
     },[service])
 
-    const handleclose = id =>{
-         const procced = window.confirm('are you sure you want to cancel this order');
-         if(procced){
-            fetch(`http://localhost:5000/review/${id}`,{
-                method:'DELETE'
-            })
-            .then(res=>res.json())
-            .then(data=>{
-                console.log(data);
-            })
-         }
-    }
+ 
     return (
         <tr>
         <th>
@@ -54,7 +42,23 @@ const ReviewItem = ({review}) => {
         </td>
         <td>{message}</td>
         <th>
-          <button className="btn btn-ghost btn-xs">details</button>
+
+            {/* toogle is started */}
+<label for="my-modal-4" class="btn">see review</label>
+
+<input type="checkbox" id="my-modal-4" class="modal-toggle" />
+<label for="my-modal-4" class="modal cursor-pointer">
+  <label class="modal-box relative" for="">
+    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </label>
+</label>
+            {/* toogle is indeed */}
+
+
+
+
+          <button onClick={()=>handlereviewUpdate(_id)} className="btn btn-ghost btn-xs">{status ? status : 'panding'}</button>
         </th>
       </tr>
      
