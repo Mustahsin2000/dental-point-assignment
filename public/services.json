@@ -1,6 +1,6 @@
 [
     {
-      "_id": "636c88c5b962fe67bd5a2fb1",
+      
       "service_id": 0,
       "img": "https://www.grxstatic.com/4f3rgqwzdznj/4I9QFX8Vl1Pb0MI9Im4Wlf/1a5a4f71a9023f9a74bd3b8bbfd00449/dentist_extracting_womans-tooth-467100386.jpg?format=pjpg&auto=webp&width=704",
       "price": 27,
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "_id": "636c88c52bba44459498e96a",
+      
       "service_id": 1,
       "img": "https://www.westvillagedentalcare.com/app/media/services/root-canals.jpg",
       "price": 20,
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "_id": "636c88c5a7721b0d42dd1b4c",
+      
       "service_id": 2,
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVaFScXFqD2-Ba1397Z_m9bzshvOsZH8Z5jF5ztCyqKX5r-sOIJnKL1tYFQg1XpzV5qc&usqp=CAU",
       "price": 29,
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "_id": "636c88c53857c83912cdf73e",
+      
       "service_id": 3,
       "img": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/09/Female_Dental_Work_1296x728-header-1296x728.jpg?w=1155&h=1528",
       "price": 39,
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "_id": "636c88c5e85b48524891af58",
+      
       "service_id": 4,
       "img": "https://mercuryfreedentistry.files.wordpress.com/2016/12/petition-photo.jpg",
       "price": 40,
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "_id": "636c88c5c1b9641d3a9fdca3",
+      
       "service_id": 5,
       "img": "https://img.freepik.com/free-photo/x-ray-teeth_1303-9353.jpg",
       "price": 38,
