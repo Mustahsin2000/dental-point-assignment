@@ -3,8 +3,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/Authprovider/Authprovider';
 import useTitle from '../../Hooks/useTitle';
 
+
 const Login = () => {
   const {login} = useContext(AuthContext);
+  const {googleSignIN} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   useTitle('Login');
@@ -38,12 +40,21 @@ const Login = () => {
           .then(data=>{
             console.log(data);
             localStorage.setItem('token',data.token);
+             navigate(from,{replace:true})
           })
-
-          // navigate(from,{replace:true})
         })
         .catch(err=>console.log(err))
     }
+
+    const handleGoogleSignin = () =>{
+      googleSignIN()
+      .then(result=>{
+          const user = result.user;
+          console.log(user);
+          navigate(from,{replace:true})
+      })
+      .catch(err=>console.error(err));
+  }
 
     return (
         <div className="hero w-full my-20">
@@ -75,7 +86,9 @@ const Login = () => {
               </div>
             </form>
             <p className='text-center'>New to dental point <Link className='text-blue-600 font-bold' to='/signup'>Sign Up</Link></p>
+            <p className='text-center'><button onClick={handleGoogleSignin} className='btn btn-primary text-white ' >Google</button></p>
           </div>
+         
         </div>
       </div>
     );

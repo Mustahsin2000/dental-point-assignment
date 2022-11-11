@@ -5,16 +5,28 @@ import useTitle from '../../Hooks/useTitle';
 import ReviewItem from './ReviewItem';
 
 const Review = () => {
-    const {user} = useContext(AuthContext);
+    const {user,logout} = useContext(AuthContext);
     const [reviews,setReviews] = useState([]);
     useTitle('Review')
 
 
     useEffect(()=>{
-       fetch(`http://localhost:5000/review?email=${user?.email}`)
-       .then(res=>res.json())
-       .then(data=>setReviews(data))
-    },[user?.email])
+       fetch(`http://localhost:5000/review?email=${user?.email}`,{
+        headers:{
+          authorization: `Bearer ${localStorage.getItem('token')}`
+        }
+       })
+       .then(res=>{
+        if(res.status === 401 || res.status ===403){
+          logout();
+        }
+        return res.json()
+       })
+       .then(data=>{
+
+        setReviews(data)
+       })
+    },[user?.email,logout])
 
     const handleclose = id =>{
         const procced = window.confirm('are you sure you want to cancel this review');

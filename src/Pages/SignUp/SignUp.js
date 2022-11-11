@@ -5,6 +5,7 @@ import useTitle from '../../Hooks/useTitle';
 
 const SignUp = () => {
     const {createUser} = useContext(AuthContext);
+   
     useTitle('Register')
     const handleSignUp = event =>{
         event.preventDefault();
