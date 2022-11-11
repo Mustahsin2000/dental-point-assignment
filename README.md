@@ -2,9 +2,8 @@
 
 
 
-## Available Scripts
+## Used on this project:
 
-Used on this project: 
 1. react,react-router-dom
 2. Firebase Authentication
 3. node js, express js
