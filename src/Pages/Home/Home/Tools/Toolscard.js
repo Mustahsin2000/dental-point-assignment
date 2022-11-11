@@ -5,6 +5,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import './Toolscard.css'
 const Toolscard = ({tool}) => {
     const {_id,price,title,description,img} = tool;
+    const description1 = description.slice(0,100);
     return (
         <div className="card w-75 bg-base-100 shadow-xl">
   <PhotoProvider>
@@ -16,7 +17,7 @@ const Toolscard = ({tool}) => {
     <h2 className="card-title">{title}</h2>
     <h2 className="card-title">{price}</h2>
     
-    <p className='description'>{description}</p>
+    <p className='description'>{description1}...</p>
     <div className="card-actions justify-end">
       <Link to={`/services/${_id}`}><button className="btn btn-primary">view Details</button></Link>
     </div>
