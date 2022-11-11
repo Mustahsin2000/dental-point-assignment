@@ -1,13 +1,14 @@
 import React from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useTitle from '../../Hooks/useTitle';
 
 const AddService = () => {
 
     const Navigate = useNavigate();
+    useTitle('Add Service')
     const handleaddService = event =>{
         event.preventDefault();
-       
         const name= event.target.title.value;
         const price= event.target.price.value;
         const photo= event.target.photo.value;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import Equipment from '../../Equipment/Equipment';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
