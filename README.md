@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+#  Dental_Point
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+Used on this project: 
+1. react,react-router-dom
+2. Firebase Authentication
+3. node js, express js
+4. MongoDB
+5. JWT etc..
+
 
 ### `npm start`
 
